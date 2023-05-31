@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout
+        pattern="[%date{ISO8601}] [%-5level] [%thread] [%MDC{traceId},%MDC{spanId}] %logger{1.}.%method#%line - %message%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.example" level="INFO" additivity="false">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <Root level="ERROR">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
