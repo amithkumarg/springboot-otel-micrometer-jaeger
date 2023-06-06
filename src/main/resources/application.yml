@@ -1,2 +1,13 @@
 management.tracing.sampling.probability: 1.0
-spring.application.name: springboot-otel-micrometer-jaeger
+spring:
+  application.name: springboot-otel-micrometer-jaeger
+  task:
+    execution:
+      pool:
+        core-size: 5
+        max-size: 10
+        queue-capacity: 10
+        keep-alive: 60s
+      shutdown:
+        await-termination: true
+        await-termination-period: 120s
