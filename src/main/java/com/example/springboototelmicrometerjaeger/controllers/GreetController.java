@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetController {
 
   private final GreetingService greetingService;
-  private Random random = new Random();
+  private final Random random = new Random();
 
   @GetMapping("/greet/{name}")
   public String greet(@PathVariable("name") String name) {

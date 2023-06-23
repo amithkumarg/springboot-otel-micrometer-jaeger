@@ -8,9 +8,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 @EnableAsync
-public class SpringbootOtelMicrometerJaegerApplication {
+public class Applicaiton {
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringbootOtelMicrometerJaegerApplication.class, args);
+    SpringApplication.run(Applicaiton.class, args);
   }
 }
